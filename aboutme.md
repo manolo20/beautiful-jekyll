@@ -1,16 +1,20 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who am I?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Manolo and I am a data scientist. I have a diverse academic background, I used to be a pilot and then I switched paths to study mathematics and economics. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### my interests
 
-### my history
+Back in school, I took a class with 2 of my now best friends in Statistical Machine Learning which boost my desire to learn and understand the mathematics behind ML.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I enjoy working in new projects in R and Python (either in data visualization or machine learning ). I have a particular interest in learning French (parce que c'est une langue tres belle). I also like playing chess although my ELO in chess.com is only 1590.   
+
+I speak English, Spanish, 65% French and 10% Serbian. 
+
+### why this blog?
+
+Because I would like to give back to the open source community by sharing some of my projects. Most of my knowledge comes from blogs that I have read, projects that I have found in Github and from incredible people that I have met throughout my academic and professional career. 
