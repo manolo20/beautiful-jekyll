@@ -4,7 +4,7 @@ title: About me
 subtitle: Who am I?
 ---
 
-My name is Manolo and I was the only Manolo at my university. I am a data scientist/economist with a diverse academic background, I used to be a pilot and then I switched paths to study mathematics and economics. 
+My name is Manolo and according to some statistics I was the only Manolo at my university. I am a data scientist/economist with a very diverse academic background. I used to be a pilot but then I decided to switch paths and I studied economics and mathematics.  
 
 
 ### My interests
