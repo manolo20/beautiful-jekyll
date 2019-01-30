@@ -18,3 +18,5 @@ I speak English, Spanish, 65% French and 10% Serbian.
 ### why this blog?
 
 Because I would like to give back to the open source community by sharing some of my projects. Most of my knowledge comes from blogs that I have read, projects that I have found in Github and from incredible people that I have met throughout my academic and professional career. 
+
+Also, big thanks to Dean Attali for his neat Jekyll template and especially his outstanding [blog](https://deanattali.com/)!  
