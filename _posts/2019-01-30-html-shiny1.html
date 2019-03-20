@@ -1,3 +1,6 @@
+<!-- 
+Here, I am trying to run some formulas:
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 <p>
@@ -8,6 +11,8 @@
 <p><img src="images/stc.png" style="float:right" markdown="1" height="400px" width="300px" /></p>
 <h2 id="what-is-shiny">What is shiny?</h2>
 <MATH>&int;_a_^b^{f(x)<over>1+x} dx</MATH>
+
+-->
 
 <p><img src="img/shiny-hex.png" height="200px" width="50px" /></p>
 <p>&quot;shiny&quot; is a package used to create interactive dashboards without the necessity to know any HTML, CSS or JavaScript.</p>
@@ -77,13 +82,16 @@ runExample(&quot;09_upload&quot;)</code></pre>
 </ol>
 <h2 id="idea">1) Idea:</h2>
 <p>We will create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.</p>
-<p>Table 3610043401: Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000) https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401</p>
+<p>Table 3610043401: Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000) 
+  [https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401)</p>
+ 
+  
 <h2 id="getting-the-data">2) Getting the data:</h2>
 <pre><code>library(CANSIM2R)
 
-# We will download Table 36-10-0434-01:
+# The library CANSIM2R help us to download Table 36-10-0434-01:
 # Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
-# From Statistics Canada
+# from the Statistics Canada
 
 gdp_raw &lt;- getCANSIM(36100434, raw=TRUE)
 </code></pre>
