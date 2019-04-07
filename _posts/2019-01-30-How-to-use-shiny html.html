@@ -183,36 +183,30 @@
 
 
 
-    <div id="header-big-imgs" data-num-img="1" data-img-src-1="/img/path.jpg"></div>
+  <div id="header-big-imgs" data-num-img="1" data-img-src-1="/img/path.jpg"></div>
 
-<body>
 
 <header class="header-section has-img">
 
-
-<!-- if I use: div clas="intro-header no-img" it will have no image
- instead I need to use: div clas="intro-header has-img" -->
-
-
-  <div class="big-img intro-header" style="background-image: url(&quot;/img/path.jpg&quot;)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-heading">
-            <h1>How to use Shiny?</h1>
-        
-        
-        
-        <span class="post-meta">Posted on January 30, 2019</span>
-        
-          </div>
+<div class="big-img intro-header" style="background-image: url(&quot;/img/path.jpg&quot;);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>How to use Shiny?</h1>
+		  
+		  
+		  
+		  <span class="post-meta">Posted on January 30, 2019</span>
+		  
         </div>
       </div>
     </div>
-    <span class="img-desc" style="display: none;"></span>
   </div>
+  <span class="img-desc" style="display: none;"></span>
+</div>
 
-  <div class="intro-header no-img">
+<div class="intro-header no-img">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -231,94 +225,138 @@
 </header>
 
 
-  
 
-<p><img src="/img/shiny-hex.png" height="200px" width="200px" /></p>
-<p>&quot;shiny&quot; is a package used to create interactive dashboards without the necessity to know any HTML, CSS or JavaScript.</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      <article role="main" class="blog-post">
+        <p>$\alpha$</p>
+
+<p><img src="images/stc.png" style="float:right" width="300px" height="400px"></p>
+
+<h2 id="what-is-shiny">What is shiny?</h2>
+
+<p><img src="images/shiny-hex.png" width="50px" height="200px"></p>
+
+<p>“shiny” is a package used to create interactive dashboards without the necessity to know any HTML, CSS or JavaScript.</p>
+
 <p>It was developed by Joe Cheng from RStudio.</p>
+
 <p>Some of the benefits of using shiny are:</p>
-<ol style="list-style-type: decimal">
-<li>Interactivity.</li>
-<li>Easy to share.</li>
-<li>Relatively easy to develop (compared to other programing languages).</li>
-<li>Open source library. (RStudio, stackoverflow, github)</li>
+
+<ol>
+  <li>Interactivity.</li>
+  <li>Easy to share.</li>
+  <li>Relatively easy to develop (compared to other programing languages).</li>
+  <li>Open source library. (RStudio, stackoverflow, github)</li>
 </ol>
+
 <h2 id="installing-shiny">Installing shiny</h2>
+
 <p>To install shiny we run:</p>
-<pre><code>install.packages(&quot;shiny&quot;)</code></pre>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>install.packages("shiny")
+</code></pre></div></div>
 <p>and then we load the library:</p>
-<pre><code>library(&quot;shiny&quot;)</code></pre>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library("shiny")
+</code></pre></div></div>
+
 <h2 id="structure">Structure</h2>
+
 <p>A folder contating a basic shiny application is structured in two different ways:</p>
-<ol style="list-style-type: decimal">
-<li>A folder that contains a file named myapp.R which includes the ui and server functions:</li>
+
+<ol>
+  <li>A folder that contains a file named myapp.R which includes the ui and server functions:</li>
 </ol>
-<pre><code>myapp
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myapp
 │   app.R
 └───data
 │   └───data.csv
 └───images
-    └───image.jpg</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>A folder that includes a ui.R and a server.R files:</li>
+    └───image.jpg
+</code></pre></div></div>
+
+<ol>
+  <li>A folder that includes a ui.R and a server.R files:</li>
 </ol>
-<pre><code>myapp
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myapp
 │   ui.R
 │   server.R  
 └───data
 │   └───data.csv
 └───images
-    └───image.jpg</code></pre>
+    └───image.jpg
+</code></pre></div></div>
+
 <h2 id="what-is-a-ui-and-a-server">What is a ui and a server?</h2>
+
 <p>The ui stands for <strong>user interface</strong> and it is the skeleton or layout of an application, for example, where a dropdown menu should be located, or which options a radio button menu should have, or the range of a slidebar. The ui is written using shiny functions and its output is raw HTML code.</p>
+
 <p>The server is a function that allows users interact with the application by selecting specific options of the ui in order to obtain different results which can be in the form of plots, datasets, mathematical calculations, words, images.</p>
+
 <p>The UI is responsible for creating specific controls that a user can iteract with, while the server is translating the specific options selected in the ui into an actual plot or data.</p>
+
 <h2 id="layout-of-a-shiny-application">Layout of a shiny application</h2>
-<div class="figure">
-<img src="/img/layout.PNG" />
-</div>
+
+<p><img src="images/layout.PNG" alt=""></p>
+
 <h2 id="basic-widgets-in-shiny">Basic widgets in Shiny</h2>
-<div class="figure">
-<img src="/img/basic-widgets.png" />
-</div>
+
+<p><img src="images/basic-widgets.png" alt=""></p>
+
 <h2 id="examples">Examples</h2>
-<p>Now let's explore some of the examples that one can create using shiny:</p>
-<pre><code>library(shiny)
-runExample(&quot;01_hello&quot;)
-runExample(&quot;03_reactivity&quot;)
-runExample(&quot;05_sliders&quot;)
-runExample(&quot;09_upload&quot;)</code></pre>
+
+<p>Now let’s explore some of the examples that one can create using shiny:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(shiny)
+runExample("01_hello")
+runExample("03_reactivity")
+runExample("05_sliders")
+runExample("09_upload")
+</code></pre></div></div>
+
 <h2 id="creating-a-shiny-application">Creating a shiny application</h2>
+
 <p>Steps:</p>
-<ol style="list-style-type: decimal">
-<li>Have an idea on which data to use and on how to visualize it.</li>
-<li>Get the data (i.e.: API, webscraping, accesing a database).</li>
-<li>Clean the data.</li>
-<li>Create a shiny application.</li>
-<li>Share the application.</li>
-<li>Listen to suggestions from users.</li>
-<li>Improve the application.</li>
+
+<ol>
+  <li>Have an idea on which data we want to use and how we want to present it.</li>
+  <li>Get the data (webscraping, accesing a database).</li>
+  <li>Clean the data.</li>
+  <li>Create a shiny application.</li>
+  <li>Share the application.</li>
+  <li>Listen to suggestions from users.</li>
+  <li>Improve the application.</li>
 </ol>
 
+<h2 id="1-idea">1) Idea:</h2>
 
-<h2 id="idea">1) Idea:</h2>
+<p>We will create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.</p>
 
-<p>Create a dashboard that visualizes GDP figures at the national level for all published NAICS (North American Industry Classification) industries.</p>
-<p><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401">Table 3610043401</a>: Gross domestic product 
-  (GDP) at basic prices, by industry, monthly (x 1,000,000) </p>
- 
-  
-<h2 id="getting-the-data">2) Getting the data:</h2>
-<pre><code>library(CANSIM2R)
+<p>Table 3610043401:
+Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043401</p>
 
-# The library CANSIM2R help us to download Table 36-10-0434-01:
+<h2 id="2-getting-the-data">2) Getting the data:</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(CANSIM2R)
+
+# We will download Table 36-10-0434-01:
 # Gross domestic product (GDP) at basic prices, by industry, monthly (x 1,000,000)
-# from the Statistics Canada
+# From Statistics Canada
 
 gdp_raw &lt;- getCANSIM(36100434, raw=TRUE)
-</code></pre>
-<h2 id="cleaning-the-data">3) Cleaning the data:</h2>
-<pre><code>library(dplyr)
+
+</code></pre></div></div>
+<h2 id="3-cleaning-the-data">3) Cleaning the data:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(dplyr)
 
 # Print the first rows of the dataset
 head(gdp_raw)
@@ -333,26 +371,28 @@ unique(table04$GEO)
 
 # Cleaning the data:
 gdp &lt;- gdp_raw %&gt;% 
-  filter(Seasonal.adjustment %in% &quot;Seasonally adjusted at annual rates&quot;)%&gt;%
-  select(&quot;time&quot;=&quot;X.U.FEFF.REF_DATE&quot;,
-         &quot;naics&quot;=&quot;North.American.Industry.Classification.System..NAICS.&quot;,
-         &quot;value&quot;=&quot;VALUE&quot;, 
-         &quot;prices&quot;=&quot;Prices&quot;) 
+  filter(Seasonal.adjustment %in% "Seasonally adjusted at annual rates")%&gt;%
+  select("time"="X.U.FEFF.REF_DATE",
+         "naics"="North.American.Industry.Classification.System..NAICS.",
+         "value"="VALUE", 
+         "prices"="Prices") 
 
-# Creating a new column time1 which will be a &quot;date&quot; object.
-gdp$time1&lt;-as.Date(paste((gdp$time), &quot;-01&quot;, sep=&quot;&quot;))
+# Creating a new column time1 which will be a "date" object.
+gdp$time1&lt;-as.Date(paste((gdp$time), "-01", sep=""))
 
 gdp$time1&lt;-as.Date(gdp$time1)
 
 
 typeof(gdp$value)
-</code></pre>
-<pre><code># Define UI for app that analyzes the GDP at the national level for all NAICS industries ----
+
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Define UI for app that analyzes the GDP at the national level for all NAICS industries ----
 
 ui &lt;- fluidPage(
   
   # App title ----
-  titlePanel(&quot;GDP Analysis&quot;),
+  titlePanel("GDP Analysis"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -378,14 +418,17 @@ server &lt;- function(input, output) {
 
 # To run the app:
 
-# shinyApp(ui=ui, server=server)</code></pre>
-<h2 id="creating-the-shiny-application">4) Creating the shiny application:</h2>
-<pre><code># Define UI for app that analyzes the GDP at the national level for all NAICS industries ----
+# shinyApp(ui=ui, server=server)
+</code></pre></div></div>
+
+<h2 id="4-creating-the-shiny-application">4) Creating the shiny application:</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Define UI for app that analyzes the GDP at the national level for all NAICS industries ----
 
 ui &lt;- fluidPage(
   
   # App title ----
-  titlePanel(&quot;GDP Analysis&quot;),
+  titlePanel("GDP Analysis"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -394,13 +437,13 @@ ui &lt;- fluidPage(
     sidebarPanel(
       
       # Input: selectInput allows users to choose a given industry ----
-      selectInput(inputId = &quot;industry&quot;,
-                  label = &quot;Select an industry:&quot;,
+      selectInput(inputId = "industry",
+                  label = "Select an industry:",
                   choices = unique(gdp$naics)), 
       
       # Input: radioButtons allows users to choose a specific price measure ----
-      radioButtons(inputId = &quot;prices&quot;,
-                   label = &quot;Select price measure:&quot;,
+      radioButtons(inputId = "prices",
+                   label = "Select price measure:",
                    choices = unique(gdp$prices))
       
     ),
@@ -409,7 +452,7 @@ ui &lt;- fluidPage(
     mainPanel(
       
       # Output: Plot ----
-      plotOutput(outputId = &quot;plot2&quot;, height = &quot;800px&quot;, width = &quot;700px&quot;)
+      plotOutput(outputId = "plot2", height = "800px", width = "700px")
       
       
     )
@@ -428,7 +471,7 @@ server &lt;- function(input, output) {
   # The server will generate a line chart which is wrapped in a call
   # to renderPlot to indicate that:
   #
-  # 1. It is &quot;reactive&quot; and therefore should be automatically
+  # 1. It is "reactive" and therefore should be automatically
   #    re-executed when inputs (input$industry and input$price) change
   # 2. Its output type is a plot
   
@@ -442,7 +485,7 @@ server &lt;- function(input, output) {
     ggplot(dat, aes(x= time1 , y= value, group=1))+
       geom_line()+
       theme(axis.text.x = element_text(size=11, angle=90))+
-      scale_x_date(date_labels = &quot;%b %y&quot;, date_breaks = &quot;1 year&quot;)
+      scale_x_date(date_labels = "%b %y", date_breaks = "1 year")
 
   })
   
@@ -450,28 +493,170 @@ server &lt;- function(input, output) {
 
 # To run the app:
 
-# shinyApp(ui=ui, server=server)</code></pre>
-<h2 id="sharing-the-application">5) Sharing the application:</h2>
+# shinyApp(ui=ui, server=server)
+</code></pre></div></div>
+
+<h2 id="5-sharing-the-application">5) Sharing the application:</h2>
+
 <ul>
-<li>shinyapps.io</li>
-<li>Ocean Digital</li>
-<li>Amazon Web Services</li>
-<li>Microsoft Azure</li>
+  <li>shinyapps.io</li>
+  <li>Ocean Digital</li>
+  <li>Amazon Web Services</li>
+  <li>Microsoft Azure</li>
 </ul>
 
-</body>>
-<!-- 
-Here, I am trying to run some formulas:
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+      </article>
 
-<p>
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-</p>
+      
 
-<p><img src="images/stc.png" style="float:right" markdown="1" height="400px" width="300px" /></p>
-<h2 id="what-is-shiny">What is shiny?</h2>
-<MATH>&int;_a_^b^{f(x)<over>1+x} dx</MATH>
+      
+        <!-- Check if any share-links are active -->
 
--->
+
+
+
+<section id="social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=How+to+use+Shiny%3F+https://manolo20.github.io/             /2019-01-30-shiny/" class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+
+  
+
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="/2019-01-30-How-to-use-shiny-html/" data-toggle="tooltip" data-placement="top" title="How To Use Shiny html">← Previous Post</a>
+        </li>
+        
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          <div class="comments">
+    <div id="disqus_thread"><iframe id="dsq-app7845" name="dsq-app7845" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px !important; min-width: 100% !important; border: medium none !important; overflow: hidden !important; height: 565px !important;" src="https://disqus.com/embed/comments/?base=default&amp;f=mark&amp;t_u=https%3A%2F%2Fmanolo20.github.io%2F2019-01-30-shiny%2F&amp;t_d=How%20to%20use%20Shiny%3F&amp;t_t=How%20to%20use%20Shiny%3F&amp;s_o=default&amp;d_m=0#version=3cd87e0f949a3290918feaf8a303966c" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'Mark';
+        /* ensure that pages with query string get the same discussion */
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+        </div>
+          
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="/feed.xml" title="RSS"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">RSS</span>
+              </a>
+            </li><li><a href="mailto:mmala027@uottawa.ca" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://github.com/manolo20" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://twitter.com/mmala20" title="Twitter"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Manolo
+      &nbsp;•&nbsp;
+      2019
+
+      
+      &nbsp;•&nbsp;
+      <a href="https://manolo20.github.io/             ">MyWebsite.com</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script><script src="/js/jquery-1.11.2.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  
+
+<iframe style="display: none;"></iframe></body>
