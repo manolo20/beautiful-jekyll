@@ -1,101 +1,39 @@
     <!-- TODO this file has become a mess, refactor it -->
 
+
+
+
+    <div id="header-big-imgs" data-num-img="1" data-img-src-1="/img/path.jpg"></div>
+
+  <!-- error in line 186 
+<div id="header-big-imgs" data-num-img="1" data-img-src-1="/img/path.jpg"></div>
+needs to appear right after the close </nav> -->
 <body>
-
-    
-  
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-        <a class="navbar-brand" href="https://manolo20.github.io/             ">Manolo's blog</a>
-      
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      
-        
-          <li>
-            
-
-
-
-
-
-
-<a href="/aboutme">About Me</a>
-
-          </li>
-        
-        
-        
-          <li class="navlinks-container" style="min-width: 0px;">
-            <a class="navlinks-parent" href="javascript:void(0)">Resources</a>
-            <div class="navlinks-children">
-              
-                
-                  
-
-
-
-
-
-
-<a href="http://www.markdowntutorial.com/">Learn markdown</a>
-
-                
-              
-                
-                  
-
-
-
-
-
-
-<a href="https://pages.github.com/">GitHub Pages</a>
-
-                
-              
-            </div>
-          </li>
-        
-        
-      </ul>
-    </div>
-
-	
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="https://manolo20.github.io/              ">
-	      <img class="avatar-img" src="/img/avatar-icon.png">
-		</a>
-	  </div>
-	</div>
-	
-
-  </div>
-</nav>
-
-
-    <!-- TODO this file has become a mess, refactor it -->
-
-
-
-
-  <div id="header-big-imgs" data-num-img="1" data-img-src-1="/img/path.jpg"  width="1000" height="600"></div>
-
-
 <header class="header-section has-img">
 
-<div class="big-img intro-header" style="background-image: url(&quot;/img/path.jpg&quot;);" width="1000" height="600">
+
+<!-- if I use: div clas="intro-header no-img" it will have no image
+ instead I need to use: div clas="intro-header has-img" -->
+
+  <div class="big-img intro-header" style="background-image: url(&quot;/img/path.jpg&quot;)">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>How to use Shiny?</h1>
+        
+        
+        
+        <span class="post-meta">Posted on January 30, 2019</span>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="img-desc" style="display: none;"></span>
+  </div>
+
+  <div class="intro-header no-img">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -110,36 +48,9 @@
       </div>
     </div>
   </div>
-  <span class="img-desc" style="display: none;"></span>
 </div>
-
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
-          <h1>How to use Shiny?</h1>
-		  
-		  
-		  
-		  <span class="post-meta">Posted on January 30, 2019</span>
-		  
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 </header>
 
-	
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-      
-
-      <article role="main" class="blog-post">
 
   
 
